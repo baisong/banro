@@ -4,7 +4,7 @@ String curTime;
 String boardString;
 
 main() {
-  var game = new Game.initBoard();
+  Game game = new Game();
   boardString = game.printBoard();
 
   var today = new Date.now();

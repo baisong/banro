@@ -17,7 +17,7 @@ class Game {
   String printBoard() {
     String board = blankBoard();
     for (Tile tile in tiles) {
-      board = board.replaceFirst('###', '$tile');
+      board = board.replaceFirst('#####', '$tile');
     }
     return board;
   }
@@ -25,7 +25,7 @@ class Game {
   /**
    * Sets up a new random board.
    */
-  Game.initBoard() {
+  Game() {
     this.tiles = [];
     this.resources = shuffle(['W','W','W','W','L','L','L','L','S','S','S','S','I','I','I','B','B','B','X']);
     this.probs = shuffle([2,3,3,4,4,5,5,6,6,8,8,9,9,10,10,11,11,12]);
@@ -71,8 +71,8 @@ class Tile extends Piece {
     this.probability = probability;
 
     // @todo instead return one of: '', 'W', 'WW', 'WWW','WWWW', 'WWWWW'
-    String buffer = probability < 10 ? '0' : '';
-    this.textSymbol = '${resource}${buffer}${probability}';
+    //this.textSymbol = simplePrint(this.resource, this.probability);
+    this.textSymbol = proportionPrint(this.resource, this.probability);
   }
 
   String toString() => '${textSymbol}';
@@ -83,13 +83,12 @@ class Tile extends Piece {
  */
 class Edge extends Piece {
   List<String> nodes;
-  List<String> tiles;
 }
 
 /**
  * Represents a single corner of three edges, where cities are built.
  */
-class Node extends Piece {
+class Corner extends Piece {
   List<String> edges;
 }
 
@@ -109,4 +108,47 @@ List shuffle(List list) {
     list[swap] = tmp;
   }
   return list;
+}
+
+String simplePrint(String resource, int probability) {
+  String buffer = probability < 10 ? '0' : '';
+
+  return ' ${resource}${buffer}${probability} ';
+}
+
+String proportionPrint(String resource, int probability) {
+  String output = '';
+  Map<String, int> proportions = {
+    '2' : 1,
+    '3' : 2,
+    '4' : 3,
+    '5' : 4,
+    '6' : 5,
+    '8' : 5,
+    '9' : 4,
+    '10': 3,
+    '11': 2,
+    '12': 1,
+  };
+
+  int proportion = proportions[probability.toString()];
+  if (proportion == null) {
+    proportion = 0;
+  }
+  for (int i = 0; i < proportion; i++) {
+    output = '${output}${resource}';
+  }
+
+  if (proportion % 2 == 0) {
+    output = '${output} ';
+  }
+  output = '<span class="resource-${resource.toLowerCase()}">${output}</span>';
+
+  int width = proportion;
+  while (width < 4) {
+    output = ' ${output} ';
+    width = width + 2;
+  }
+
+  return output;
 }

@@ -25,6 +25,31 @@ body {
   padding-right:10px;
 }
 
-#board pre {
+#boardcontainer {
   margin-right:22px;
+}
+
+#board {
+  font-family:Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace;
+  white-space: pre;
+}
+
+.resource-b {
+  background-color: #fcc;
+}
+
+.resource-i {
+  background-color: #eee;
+}
+
+.resource-l {
+  background-color: #bda;
+}
+
+.resource-s {
+  background-color: #dfb;
+}
+
+.resource-w {
+  background-color: #fec;
 }
