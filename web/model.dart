@@ -11,6 +11,8 @@ class Game {
   List<int> probs;
   List<Tile> tiles;
 
+  List<Section> stats;
+
   /**
    * Prints a text-only visualization of the game board.
    */
@@ -45,6 +47,68 @@ class Game {
       var tile = new Tile(resources[i], probability);
       this.tiles.add(tile);
     }
+
+    this.stats = [];
+    this.stats.add(new Section('Resources', this.resourceStats()));
+  }
+
+  String printStats() {
+    String output = '';
+    for (var statSection in this.stats) {
+      output = "$output$statSection";
+    }
+    return output;
+  }
+
+  String resourceStats() {
+    String output = '<dl class="dl-horizontal">';
+    var totals = {};
+    var counts = {};
+    var averages = {};
+    for (var tile in this.tiles) {
+      if (tile.probability < 1) {
+        continue;
+      }
+      if (!totals.containsKey("${tile.resource}")) {
+        totals["${tile.resource}"] = 0;
+      }
+      if (!counts.containsKey("${tile.resource}")) {
+        counts["${tile.resource}"] = 0;
+      }
+      totals["${tile.resource}"] += tile.proportion;
+      counts["${tile.resource}"] += 1;
+      averages["${tile.resource}"] = totals["${tile.resource}"].toDouble() / counts["${tile.resource}"].toDouble();
+    }
+
+    final num surplus_total = 16.25;
+    final num surplus_average = 4;
+    final num deficit_total = 6;
+    final num deficit_average = 2.5;
+
+    for (String resource in ['b', 'i', 'l', 's', 'w']) {
+
+      String frequency = '';
+      if (totals[resource.toUpperCase()] >= surplus_total) {
+        frequency = '<span class="surplus">++</span>';
+      }
+      else if (totals[resource.toUpperCase()] <= deficit_total) {
+        frequency = '<span class="deficit">--</span>';
+      }
+      else {
+        if (averages[resource.toUpperCase()] >= surplus_average) {
+          frequency = '<span class="surplus">+</span>';
+        }
+        else if (averages[resource.toUpperCase()] <= deficit_average) {
+          frequency = '<span class="deficit">-</span>';
+        }
+      }
+
+      output = "$output<dt class=\"resource-$resource\">${resource.toUpperCase()}</dt><dd>${totals[resource.toUpperCase()]} ${frequency} </dd>";
+    }
+
+    output = "$output</dl>";
+
+    return output;
   }
 }
 
@@ -65,14 +129,54 @@ class Tile extends Piece {
   List<String> nodes;
   String resource;
   int probability;
+  int proportion;
 
   Tile(String resource, int probability) {
     this.resource = resource;
     this.probability = probability;
 
-    // @todo instead return one of: '', 'W', 'WW', 'WWW','WWWW', 'WWWWW'
+    Map<String, int> proportions = {
+      '2' : 1,
+      '3' : 2,
+      '4' : 3,
+      '5' : 4,
+      '6' : 5,
+      '8' : 5,
+      '9' : 4,
+      '10': 3,
+      '11': 2,
+      '12': 1,
+    };
+
+    this.proportion = proportions[this.probability.toString()];
     //this.textSymbol = simplePrint(this.resource, this.probability);
-    this.textSymbol = proportionPrint(this.resource, this.probability);
+    this.textSymbol = this.proportionPrint();
+  }
+
+  String proportionPrint() {
+    String output = '';
+
+    if (proportion == null) {
+      proportion = 0;
+    }
+
+    for (int i = 0; i < proportion; i++) {
+      output = '${output}${resource}';
+    }
+
+    output = '<span class="resource-${resource.toLowerCase()}">${output}</span>';
+
+    if (proportion % 2 == 0) {
+      output = '${output}&nbsp;';
+    }
+
+    int width = proportion;
+    while (width < 4) {
+      output = ' ${output} ';
+      width = width + 2;
+    }
+
+    return output;
   }
 
   String toString() => '${textSymbol}';
@@ -90,6 +194,24 @@ class Edge extends Piece {
  */
 class Corner extends Piece {
   List<String> edges;
+}
+
+class Section {
+  String classattr;
+  String type;
+  String label;
+  String content;
+
+  Section.override(this.label, this.content, this.type, this.classattr);
+
+  Section(this.label, this.content) {
+    this.type = 'h3';
+    this.classattr = 'section';
+  }
+
+  String toString() {
+    return "<div class=\"${this.classattr}\"><${this.type}>${this.label}</${this.type}>${this.content}</div>";
+  }
 }
 
 /**
@@ -114,41 +236,4 @@ String simplePrint(String resource, int probability) {
   String buffer = probability < 10 ? '0' : '';
 
   return ' ${resource}${buffer}${probability} ';
-}
-
-String proportionPrint(String resource, int probability) {
-  String output = '';
-  Map<String, int> proportions = {
-    '2' : 1,
-    '3' : 2,
-    '4' : 3,
-    '5' : 4,
-    '6' : 5,
-    '8' : 5,
-    '9' : 4,
-    '10': 3,
-    '11': 2,
-    '12': 1,
-  };
-
-  int proportion = proportions[probability.toString()];
-  if (proportion == null) {
-    proportion = 0;
-  }
-  for (int i = 0; i < proportion; i++) {
-    output = '${output}${resource}';
-  }
-
-  if (proportion % 2 == 0) {
-    output = '${output} ';
-  }
-  output = '<span class="resource-${resource.toLowerCase()}">${output}</span>';
-
-  int width = proportion;
-  while (width < 4) {
-    output = ' ${output} ';
-    width = width + 2;
-  }
-
-  return output;
 }
