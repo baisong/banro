@@ -4,4 +4,4 @@ packages/*
 web/_*
 pubspec.lock
 *~
-
+.buildlog

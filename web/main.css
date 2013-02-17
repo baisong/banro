@@ -25,8 +25,15 @@ body {
   padding-right:10px;
 }
 
-#boardcontainer {
-  margin-right:22px;
+#x-board-controls button {
+  float:left;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: -10px;
+}
+
+#x-board-controls p {
+  margin-top: 20px;
 }
 
 #board {

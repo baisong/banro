@@ -1,5 +1,5 @@
-name:  banro
-description:  A game of growth
+name: banro
 version: 0.0.1
+description: A game of growth
 dependencies:
-  web_components: ">=0.2.0 <0.2.1"
+  web_ui: any

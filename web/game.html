@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+  <element name="x-game" constructor="Game" extends="div">
+    <template>
+      <div id="x-game">
+        <div id="x-board-controls">
+          <button class="btn btn-danger" on-click="newgame($event);">New game</button>
+          <p>game {{gameCount}} started at {{gameStartTime}}.
+        </div>
+        <content></content>
+      </div>
+    </template>
+    <script type="application/dart">
+      import 'package:web_ui/web_ui.dart';
+      class Game extends WebComponent {
+        int gameCount = 1;
+        int turnCount = 0;
+        var gameStartTime = new DateTime.now();
+        void newgame(e) {
+          gameStartTime = new DateTime.now();
+          gameCount++;
+          var xBoard = document.query('x-board').xtag;
+          xBoard.turnCount = 0; //.nextturn(e,true);
+          xBoard.turnStartTime = gameStartTime;
+          xBoard.begun = false;
+        }
+      }
+    </script>
+  </element>
+</html>

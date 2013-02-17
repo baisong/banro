@@ -44,7 +44,7 @@ class Game {
       else {
         probability = 0;
       }
-      var tile = new Tile(resources[i], probability);
+      Tile tile = new Tile(resources[i], probability);
       this.tiles.add(tile);
     }
 
@@ -62,9 +62,9 @@ class Game {
 
   String resourceStats() {
     String output = '<dl class="dl-horizontal">';
-    var totals = {};
-    var counts = {};
-    var averages = {};
+    Map<String, dynamic> totals = {};
+    Map<String, dynamic> counts = {};
+    Map<String, dynamic> averages = {};
     for (var tile in this.tiles) {
       if (tile.probability < 1) {
         continue;
@@ -221,7 +221,7 @@ List shuffle(List list) {
   int len = list.length - 1;
   for (int i = len; i >= 0; i--) {
     // Generates a new random value.
-    var random = new Random();
+    Random random = new Random();
     int swap = random.nextInt(len);
 
     // Swaps two values; [:i:] and the random [:swap:]

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>banro</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <link rel="stylesheet"
+  href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css">
+  <link rel="stylesheet" href="main.css">
+  <link rel="components" href="game.html">
+  <link rel="components" href="board.html">
+</head>
+<body>
+  <div class="container">
+    <h1>banro</h1>
+    <p>a game of growth</p>
+    <div class="panel">
+      <div class="row">
+        <x-game>
+          <x-board></x-board>
+        </x-game>
+        <script type="application/dart">
+          main(){}
+        </script>
+        <div id="stats" class="span5">
+          <h3>Stats</h3>
+          <!-- <div>{{statsString}}</div> -->
+         </div>
+       </div>
+     </div>
+     <div id="actions" class="row">
+       <div class="well span11">
+         <h3>Actions</h3>
+       </div>
+     </div>
+  </div>
+</body>
+</html>
