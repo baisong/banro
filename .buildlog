@@ -1335,3 +1335,19 @@ build.dart --machine --changed=web/out/index.html_bootstrap.dart.js --changed=we
 
 build.dart finished [141 ms]
 
+---
+build.dart --machine --changed=README.md --changed=pubspec.yaml --changed=web/board.dart --changed=web/board.ht...
+[{"method":"mapping","params":{"from":"web/index.html","to":"web/out/index.html"}}]
+Total time spent on web/index.html                           -- 126 ms
+build.dart finished [282 ms]
+
+---
+build.dart --machine --changed=web/out/board.html.dart --changed=web/out/game.html.dart --changed=web/out/index...
+
+build.dart finished [174 ms]
+
+---
+build.dart --machine --changed=web/out/index.html_bootstrap.dart.js --changed=web/out/index.html_bootstrap.dart...
+
+build.dart finished [154 ms]
+
