@@ -1,0 +1,71 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.2em;
+  margin: 15px;
+  background-color: #efefef;
+}
+
+.container .panel {
+	position: relative;
+	margin: 15px 0px;
+	padding: 0px 19px 14px;
+	background-color: rgb(255, 255, 255);
+	border: 1px solid rgb(221, 221, 221);
+	border-radius: 4px 4px 4px 4px;
+}
+
+.fillmax {
+  width: 100%;
+  height: 100%;
+}
+
+#board {
+  padding-right:10px;
+}
+
+#x-board-controls button {
+  float:left;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: -10px;
+}
+
+#x-board-controls p {
+  margin-top: 20px;
+}
+
+#board {
+  font-family:Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace;
+  white-space: pre;
+}
+
+.resource-b {
+  background-color: #fcc;
+}
+
+.resource-i {
+  background-color: #eee;
+}
+
+.deficit {
+  font-weight: bold;
+  color: red;
+}
+
+.surplus {
+  font-weight: bold;
+  color: green;
+}
+.resource-l {
+  background-color: #bda;
+}
+
+.resource-s {
+  background-color: #dfb;
+}
+
+.resource-w {
+  background-color: #fec;
+}
