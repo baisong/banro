@@ -1404,3 +1404,996 @@ build.dart --machine --changed=README.md
 
 build.dart finished [137 ms]
 
+---
+build.dart --machine --full
+[{"method":"mapping","params":{"from":"web/index.html","to":"web/out/index.html"}}]
+Total time spent on web/index.html                           -- 199 ms
+build.dart finished [421 ms]
+
+---
+build.dart --machine --changed=web/out/board.html.dart --changed=web/out/game.html.dart --changed=web/out/index...
+
+build.dart finished [580 ms]
+
+---
+build.dart --machine --changed=web/model.dart
+[{"method":"mapping","params":{"from":"web/index.html","to":"web/out/index.html"}}]
+Total time spent on web/index.html                           -- 199 ms
+build.dart finished [434 ms]
+
+---
+build.dart --machine --changed=web/out/board.html.dart --changed=web/out/game.html.dart --changed=web/out/index...
+
+build.dart finished [217 ms]
+
+---
+build.dart --machine --changed=web/model.dart
+[{"method":"mapping","params":{"from":"web/index.html","to":"web/out/index.html"}}]
+Total time spent on web/index.html                           -- 192 ms
+build.dart finished [445 ms]
+
+---
+build.dart --machine --changed=web/out/board.html.dart --changed=web/out/game.html.dart --changed=web/out/index...
+
+build.dart finished [311 ms]
+
+---
+build.dart --machine --changed=web/container.html --removed=web/board.html
+[{"method":"mapping","params":{"from":"web/index.html","to":"web/out/index.html"}}]
+[{"method":"error","params":{"file":"web/board.html","message":"exception while reading file, original message:\n AsyncError: 'FileIOException: Cannot open file 'web/board.html' (OS Error: No such file or directory, errno = 2)'\nStack trace:\n#0      _File.open.<anonymous closure> (dart:io:1194:9)\n#1      _ThenFuture._sendValue (dart:async:405:24)\n\n","line":1}}]
+[{"method":"warning","params":{"file":"web/index.html","message":"custom element with tag name x-board not found.","line":20,"charStart":545,"charEnd":554}}]
+Total time spent on web/index.html                           -- 207 ms
+build.dart finished [423 ms]
+
+---
+build.dart --machine --changed=web/out/game.html.dart --changed=web/out/index.html --changed=web/out/index.html...
+
+build.dart finished [201 ms]
+
+---
+build.dart --machine --changed=web/container.html
+[{"method":"mapping","params":{"from":"web/index.html","to":"web/out/index.html"}}]
+[{"method":"error","params":{"file":"web/board.html","message":"exception while reading file, original message:\n AsyncError: 'FileIOException: Cannot open file 'web/board.html' (OS Error: No such file or directory, errno = 2)'\nStack trace:\n#0      _File.open.<anonymous closure> (dart:io:1194:9)\n#1      _ThenFuture._sendValue (dart:async:405:24)\n\n","line":1}}]
+[{"method":"warning","params":{"file":"web/index.html","message":"custom element with tag name x-board not found.","line":20,"charStart":545,"charEnd":554}}]
+Total time spent on web/index.html                           -- 210 ms
+build.dart finished [428 ms]
+
+---
+build.dart --machine --changed=web/out/game.html.dart --changed=web/out/index.html --changed=web/out/index.html...
+
+build.dart finished [227 ms]
+
+---
+build.dart --machine --changed=web/index.html
+[{"method":"mapping","params":{"from":"web/index.html","to":"web/out/index.html"}}]
+[{"method":"error","params":{"file":"web/board.html","message":"exception while reading file, original message:\n AsyncError: 'FileIOException: Cannot open file 'web/board.html' (OS Error: No such file or directory, errno = 2)'\nStack trace:\n#0      _File.open.<anonymous closure> (dart:io:1194:9)\n#1      _ThenFuture._sendValue (dart:async:405:24)\n\n","line":1}}]
+[{"method":"warning","params":{"file":"web/index.html","message":"custom element with tag name x-container not found.","line":20,"charStart":545,"charEnd":558}}]
+Total time spent on web/index.html                           -- 207 ms
+build.dart finished [417 ms]
+
+---
+build.dart --machine --changed=web/out/game.html.dart --changed=web/out/index.html --changed=web/out/index.html...
+
+build.dart finished [195 ms]
+
+---
+build.dart --machine --changed=web/index.html
+[{"method":"mapping","params":{"from":"web/index.html","to":"web/out/index.html"}}]
+Total time spent on web/index.html                           -- 188 ms
+build.dart finished [420 ms]
+
+---
+build.dart --machine --changed=web/out/container.html.dart --changed=web/out/game.html.dart --changed=web/out/i...
+
+build.dart finished [225 ms]
+
+---
+build.dart --machine --changed=web/game.html
+[{"method":"mapping","params":{"from":"web/index.html","to":"web/out/index.html"}}]
+Total time spent on web/index.html                           -- 186 ms
+build.dart finished [420 ms]
+
+---
+build.dart --machine --changed=web/out/container.html.dart --changed=web/out/game.html.dart --changed=web/out/i...
+
+build.dart finished [203 ms]
+
+---
+build.dart --machine --changed=web/index.html
+[{"method":"mapping","params":{"from":"web/index.html","to":"web/out/index.html"}}]
+[{"method":"warning","params":{"file":"web/index.html","message":"custom element with tag name x-board not found.","line":21,"charStart":575,"charEnd":584}}]
+Total time spent on web/index.html                           -- 190 ms
+build.dart finished [410 ms]
+
+---
+build.dart --machine --changed=web/out/container.html.dart --changed=web/out/game.html.dart --changed=web/out/i...
+
+build.dart finished [190 ms]
+
+---
+build.dart --machine --changed=web/board.html
+[{"method":"mapping","params":{"from":"web/index.html","to":"web/out/index.html"}}]
+[{"method":"warning","params":{"file":"web/index.html","message":"custom element with tag name x-board not found.","line":21,"charStart":575,"charEnd":584}}]
+Total time spent on web/index.html                           -- 222 ms
+build.dart finished [473 ms]
+
+---
+build.dart --machine --changed=web/out/container.html.dart --changed=web/out/game.html.dart --changed=web/out/i...
+
+build.dart finished [215 ms]
+
+---
+build.dart --machine --changed=web/board.html
+[{"method":"mapping","params":{"from":"web/index.html","to":"web/out/index.html"}}]
+[{"method":"warning","params":{"file":"web/index.html","message":"custom element with tag name x-board not found.","line":21,"charStart":575,"charEnd":584}}]
+Total time spent on web/index.html                           -- 192 ms
+build.dart finished [492 ms]
+
+---
+build.dart --machine --changed=web/out/container.html.dart --changed=web/out/game.html.dart --changed=web/out/i...
+
+build.dart finished [328 ms]
+
+---
+build.dart --machine --changed=web/board.html
+[{"method":"mapping","params":{"from":"web/index.html","to":"web/out/index.html"}}]
+[{"method":"warning","params":{"file":"web/index.html","message":"custom element with tag name x-board not found.","line":21,"charStart":575,"charEnd":584}}]
+Total time spent on web/index.html                           -- 192 ms
+build.dart finished [417 ms]
+
+---
+build.dart --machine --changed=web/out/container.html.dart --changed=web/out/game.html.dart --changed=web/out/i...
+
+build.dart finished [226 ms]
+
+---
+build.dart --machine --changed=web/board.html
+[{"method":"mapping","params":{"from":"web/index.html","to":"web/out/index.html"}}]
+[{"method":"warning","params":{"file":"web/index.html","message":"custom element with tag name x-board not found.","line":21,"charStart":575,"charEnd":584}}]
+Total time spent on web/index.html                           -- 190 ms
+build.dart finished [405 ms]
+
+---
+build.dart --machine --changed=web/out/container.html.dart --changed=web/out/game.html.dart --changed=web/out/i...
+
+build.dart finished [211 ms]
+
+---
+build.dart --machine --changed=web/game.html
+[{"method":"mapping","params":{"from":"web/index.html","to":"web/out/index.html"}}]
+[{"method":"warning","params":{"file":"web/index.html","message":"custom element with tag name x-board not found.","line":21,"charStart":575,"charEnd":584}}]
+Total time spent on web/index.html                           -- 190 ms
+build.dart finished [396 ms]
+
+---
+build.dart --machine --changed=web/out/container.html.dart --changed=web/out/game.html.dart --changed=web/out/i...
+
+build.dart finished [201 ms]
+
+---
+build.dart --machine --changed=web/game.html
+[{"method":"mapping","params":{"from":"web/index.html","to":"web/out/index.html"}}]
+[{"method":"warning","params":{"file":"web/index.html","message":"custom element with tag name x-board not found.","line":21,"charStart":575,"charEnd":584}}]
+Total time spent on web/index.html                           -- 190 ms
+build.dart finished [391 ms]
+
+---
+build.dart --machine --changed=web/out/container.html.dart --changed=web/out/game.html.dart --changed=web/out/i...
+
+build.dart finished [199 ms]
+
+---
+build.dart --machine --changed=web/board.html
+[{"method":"mapping","params":{"from":"web/index.html","to":"web/out/index.html"}}]
+[{"method":"warning","params":{"file":"web/index.html","message":"custom element with tag name x-board not found.","line":21,"charStart":575,"charEnd":584}}]
+Total time spent on web/index.html                           -- 201 ms
+build.dart finished [434 ms]
+
+---
+build.dart --machine --changed=web/out/container.html.dart --changed=web/out/game.html.dart --changed=web/out/i...
+
+build.dart finished [251 ms]
+
+---
+build.dart --machine --changed=web/board.html
+[{"method":"mapping","params":{"from":"web/index.html","to":"web/out/index.html"}}]
+[{"method":"warning","params":{"file":"web/index.html","message":"custom element with tag name x-board not found.","line":21,"charStart":575,"charEnd":584}}]
+Total time spent on web/index.html                           -- 193 ms
+build.dart finished [413 ms]
+
+---
+build.dart --machine --changed=web/out/container.html.dart --changed=web/out/game.html.dart --changed=web/out/i...
+
+build.dart finished [217 ms]
+
+---
+build.dart --machine --changed=web/board.html
+[{"method":"mapping","params":{"from":"web/index.html","to":"web/out/index.html"}}]
+[{"method":"warning","params":{"file":"web/index.html","message":"custom element with tag name x-board not found.","line":21,"charStart":575,"charEnd":584}}]
+Total time spent on web/index.html                           -- 187 ms
+build.dart finished [388 ms]
+
+---
+build.dart --machine --changed=web/out/container.html.dart --changed=web/out/game.html.dart --changed=web/out/i...
+
+build.dart finished [228 ms]
+
+---
+build.dart --machine --changed=web/board.html
+[{"method":"mapping","params":{"from":"web/index.html","to":"web/out/index.html"}}]
+[{"method":"warning","params":{"file":"web/index.html","message":"custom element with tag name x-board not found.","line":21,"charStart":575,"charEnd":584}}]
+Total time spent on web/index.html                           -- 193 ms
+build.dart finished [419 ms]
+
+---
+build.dart --machine --changed=web/out/container.html.dart --changed=web/out/game.html.dart --changed=web/out/i...
+
+build.dart finished [275 ms]
+
+---
+build.dart --machine --changed=web/board.html
+[{"method":"mapping","params":{"from":"web/index.html","to":"web/out/index.html"}}]
+[{"method":"warning","params":{"file":"web/index.html","message":"custom element with tag name x-board not found.","line":21,"charStart":575,"charEnd":584}}]
+Total time spent on web/index.html                           -- 193 ms
+build.dart finished [411 ms]
+
+---
+build.dart --machine --changed=web/out/container.html.dart --changed=web/out/game.html.dart --changed=web/out/i...
+
+build.dart finished [218 ms]
+
+---
+build.dart --machine --changed=web/board.html
+[{"method":"mapping","params":{"from":"web/index.html","to":"web/out/index.html"}}]
+[{"method":"warning","params":{"file":"web/index.html","message":"custom element with tag name x-board not found.","line":21,"charStart":575,"charEnd":584}}]
+Total time spent on web/index.html                           -- 191 ms
+build.dart finished [395 ms]
+
+---
+build.dart --machine --changed=web/out/container.html.dart --changed=web/out/game.html.dart --changed=web/out/i...
+
+build.dart finished [195 ms]
+
+---
+build.dart --machine --changed=web/index.html
+[{"method":"mapping","params":{"from":"web/index.html","to":"web/out/index.html"}}]
+[{"method":"warning","params":{"file":"web/index.html","message":"custom element with tag name x-board not found.","line":21,"charStart":578,"charEnd":587}}]
+Total time spent on web/index.html                           -- 192 ms
+build.dart finished [426 ms]
+
+---
+build.dart --machine --changed=web/out/container.html.dart --changed=web/out/game.html.dart --changed=web/out/i...
+
+build.dart finished [266 ms]
+
+---
+build.dart --machine --changed=web/board.html
+[{"method":"mapping","params":{"from":"web/index.html","to":"web/out/index.html"}}]
+[{"method":"warning","params":{"file":"web/index.html","message":"custom element with tag name x-board not found.","line":21,"charStart":578,"charEnd":587}}]
+Total time spent on web/index.html                           -- 189 ms
+build.dart finished [410 ms]
+
+---
+build.dart --machine --changed=web/out/container.html.dart --changed=web/out/game.html.dart --changed=web/out/i...
+
+build.dart finished [229 ms]
+
+---
+build.dart --machine --changed=web/index.html
+[{"method":"mapping","params":{"from":"web/index.html","to":"web/out/index.html"}}]
+[{"method":"error","params":{"file":"web/game.html","message":"imported duplicate custom element definitions for \"x-game\".","line":4,"charStart":26,"charEnd":82}}]
+[{"method":"error","params":{"file":"web/board.html","message":"imported duplicate custom element definitions for \"x-game\" (second location).","line":4,"charStart":26,"charEnd":83}}]
+[{"method":"warning","params":{"file":"web/index.html","message":"custom element with tag name x-board not found.","line":22,"charStart":622,"charEnd":631}}]
+Total time spent on web/index.html                           -- 216 ms
+build.dart finished [428 ms]
+
+---
+build.dart --machine --changed=web/out/board.html.dart --changed=web/out/container.html.dart --changed=web/out/...
+
+build.dart finished [231 ms]
+
+---
+build.dart --machine --changed=web/board.html
+[{"method":"mapping","params":{"from":"web/index.html","to":"web/out/index.html"}}]
+Total time spent on web/index.html                           -- 211 ms
+build.dart finished [423 ms]
+
+---
+build.dart --machine --changed=web/out/board.html.dart --changed=web/out/container.html.dart --changed=web/out/...
+
+build.dart finished [233 ms]
+
+---
+build.dart --machine --changed=web/game.html
+[{"method":"mapping","params":{"from":"web/index.html","to":"web/out/index.html"}}]
+[{"method":"warning","params":{"file":"web/index.html","message":"custom element with tag name x-game not found.","line":20,"charStart":577,"charEnd":585}}]
+Total time spent on web/index.html                           -- 219 ms
+build.dart finished [440 ms]
+
+---
+build.dart --machine --changed=web/out/board.html.dart --changed=web/out/container.html.dart --changed=web/out/...
+
+build.dart finished [224 ms]
+
+---
+build.dart --machine --changed=web/game.html
+[{"method":"mapping","params":{"from":"web/index.html","to":"web/out/index.html"}}]
+Total time spent on web/index.html                           -- 208 ms
+build.dart finished [425 ms]
+
+---
+build.dart --machine --changed=web/out/board.html.dart --changed=web/out/container.html.dart --changed=web/out/...
+
+build.dart finished [193 ms]
+
+---
+build.dart --machine --changed=web/board.html
+[{"method":"mapping","params":{"from":"web/index.html","to":"web/out/index.html"}}]
+[{"method":"error","params":{"file":"web/x-board.dart","message":"exception while reading file, original message:\n AsyncError: 'FileIOException: Cannot open file 'web/x-board.dart' (OS Error: No such file or directory, errno = 2)'\nStack trace:\n#0      _File.open.<anonymous closure> (dart:io:1194:9)\n#1      _ThenFuture._sendValue (dart:async:405:24)\n\n","line":1}}]
+Uncaught Error: NoSuchMethodError : method not found: 'userCode'
+Receiver: null
+Arguments: []
+Stack Trace:
+#0      Object.noSuchMethod (dart:core-patch:1746:25)
+#1      _Analyzer._attachExtenalScript (package:web_ui/src/analyzer.dart:700:41)
+#2      _Analyzer._normalize (package:web_ui/src/analyzer.dart:681:27)
+#3      analyzeFile (package:web_ui/src/analyzer.dart:61:22)
+#4      Compiler._analyze.<anonymous closure> (package:web_ui/src/compiler.dart:205:28)
+#5      time (package:web_ui/src/utils.dart:38:24)
+#6      Compiler._time (package:web_ui/src/compiler.dart:291:16)
+#7      Compiler._analyze (package:web_ui/src/compiler.dart:204:12)
+#8      Compiler.run.<anonymous closure> (package:web_ui/src/compiler.dart:101:15)
+#9      _ThenFuture._sendValue (dart:async:405:24)
+
+
+Unhandled exception:
+NoSuchMethodError : method not found: 'userCode'
+Receiver: null
+Arguments: []
+#0      _FutureImpl._scheduleUnhandledError.<anonymous closure> (dart:async:333:9)
+#1      _Timer._createTimerHandler._handleTimeout (dart:io:7240:28)
+#2      _Timer._createTimerHandler._handleTimeout (dart:io:7248:7)
+#3      _Timer._createTimerHandler.<anonymous closure> (dart:io:7256:23)
+#4      _ReceivePortImpl._handleMessage (dart:isolate-patch:40:92)
+build.dart finished [646 ms]
+
+---
+build.dart --machine --changed=web/x-board.dart
+[{"method":"mapping","params":{"from":"web/index.html","to":"web/out/index.html"}}]
+[{"method":"error","params":{"file":"web/x-board.dart","message":"please provide a class definition for Board:\n ","line":4,"charStart":26,"charEnd":84}}]
+Total time spent on web/index.html                           -- 217 ms
+build.dart finished [520 ms]
+
+---
+build.dart --machine --changed=web/out/container.html.dart --changed=web/out/game.html.dart --changed=web/out/i...
+
+build.dart finished [191 ms]
+
+---
+build.dart --machine --changed=web/x-board.dart
+[{"method":"mapping","params":{"from":"web/index.html","to":"web/out/index.html"}}]
+Total time spent on web/index.html                           -- 208 ms
+build.dart finished [551 ms]
+
+---
+build.dart --machine --changed=web/out/container.html.dart --changed=web/out/game.html.dart --changed=web/out/i...
+
+build.dart finished [713 ms]
+
+---
+build.dart --machine --changed=web/game.html
+[{"method":"mapping","params":{"from":"web/index.html","to":"web/out/index.html"}}]
+Total time spent on web/index.html                           -- 206 ms
+build.dart finished [432 ms]
+
+---
+build.dart --machine --changed=web/out/container.html.dart --changed=web/out/game.html.dart --changed=web/out/i...
+
+build.dart finished [198 ms]
+
+---
+build.dart --machine --changed=web/index.html
+[{"method":"mapping","params":{"from":"web/index.html","to":"web/out/index.html"}}]
+Total time spent on web/index.html                           -- 203 ms
+build.dart finished [408 ms]
+
+---
+build.dart --machine --changed=web/out/container.html.dart --changed=web/out/game.html.dart --changed=web/out/i...
+
+build.dart finished [198 ms]
+
+---
+build.dart --machine --changed=web/x-board.dart
+[{"method":"mapping","params":{"from":"web/index.html","to":"web/out/index.html"}}]
+Total time spent on web/index.html                           -- 274 ms
+build.dart finished [582 ms]
+
+---
+build.dart --machine --changed=web/out/container.html.dart --changed=web/out/game.html.dart --changed=web/out/i...
+
+build.dart finished [485 ms]
+
+---
+build.dart --machine --changed=web/x-board.dart
+[{"method":"mapping","params":{"from":"web/index.html","to":"web/out/index.html"}}]
+Total time spent on web/index.html                           -- 213 ms
+build.dart finished [532 ms]
+
+---
+build.dart --machine --changed=web/out/container.html.dart --changed=web/out/game.html.dart --changed=web/out/i...
+
+build.dart finished [291 ms]
+
+---
+build.dart --machine --changed=web/out/x-board.dart
+
+build.dart finished [227 ms]
+
+---
+build.dart --machine --changed=web/x-board.dart
+[{"method":"mapping","params":{"from":"web/index.html","to":"web/out/index.html"}}]
+Total time spent on web/index.html                           -- 244 ms
+build.dart finished [511 ms]
+
+---
+build.dart --machine --changed=web/out/container.html.dart --changed=web/out/game.html.dart --changed=web/out/i...
+
+build.dart finished [1111 ms]
+
+---
+build.dart --machine --changed=web/board.html
+[{"method":"mapping","params":{"from":"web/index.html","to":"web/out/index.html"}}]
+Total time spent on web/index.html                           -- 203 ms
+build.dart finished [461 ms]
+
+---
+build.dart --machine --changed=web/out/container.html.dart --changed=web/out/game.html.dart --changed=web/out/i...
+
+build.dart finished [214 ms]
+
+---
+build.dart --machine --changed=web/x-board.dart
+[{"method":"mapping","params":{"from":"web/index.html","to":"web/out/index.html"}}]
+[{"method":"error","params":{"file":"web/x-board.dart","message":"please provide a class definition for Board:\n class xBoard extends WebComponent {\n  String board = \"[board]\";\n  //Board board = new Board();\n  \n  //void newboard(e) {}\n}","line":4,"charStart":26,"charEnd":84}}]
+Total time spent on web/index.html                           -- 550 ms
+build.dart finished [939 ms]
+
+---
+build.dart --machine --changed=web/out/container.html.dart --changed=web/out/game.html.dart --changed=web/out/i...
+
+build.dart finished [411 ms]
+
+---
+build.dart --machine --changed=web/x-board.dart
+[{"method":"mapping","params":{"from":"web/index.html","to":"web/out/index.html"}}]
+Total time spent on web/index.html                           -- 208 ms
+build.dart finished [446 ms]
+
+---
+build.dart --machine --changed=web/out/container.html.dart --changed=web/out/game.html.dart --changed=web/out/i...
+
+build.dart finished [360 ms]
+
+---
+build.dart --machine --changed=web/board.html
+[{"method":"mapping","params":{"from":"web/index.html","to":"web/out/index.html"}}]
+Total time spent on web/index.html                           -- 202 ms
+build.dart finished [425 ms]
+
+---
+build.dart --machine --changed=web/out/container.html.dart --changed=web/out/game.html.dart --changed=web/out/i...
+
+build.dart finished [193 ms]
+
+---
+build.dart --machine --changed=web/game.html
+[{"method":"mapping","params":{"from":"web/index.html","to":"web/out/index.html"}}]
+Total time spent on web/index.html                           -- 205 ms
+build.dart finished [411 ms]
+
+---
+build.dart --machine --changed=web/out/container.html.dart --changed=web/out/game.html.dart --changed=web/out/i...
+
+build.dart finished [199 ms]
+
+---
+build.dart --machine --changed=web/out/main.css
+
+build.dart finished [204 ms]
+
+---
+build.dart --machine --changed=web/out/main.css
+
+build.dart finished [211 ms]
+
+---
+build.dart --machine --changed=web/x-board.dart
+[{"method":"mapping","params":{"from":"web/index.html","to":"web/out/index.html"}}]
+Total time spent on web/index.html                           -- 209 ms
+build.dart finished [504 ms]
+
+---
+build.dart --machine --changed=web/out/container.html.dart --changed=web/out/game.html.dart --changed=web/out/i...
+
+build.dart finished [276 ms]
+
+---
+build.dart --machine --changed=web/x-board.dart
+[{"method":"mapping","params":{"from":"web/index.html","to":"web/out/index.html"}}]
+Total time spent on web/index.html                           -- 203 ms
+build.dart finished [469 ms]
+
+---
+build.dart --machine --changed=web/out/container.html.dart --changed=web/out/game.html.dart --changed=web/out/i...
+
+build.dart finished [369 ms]
+
+---
+build.dart --machine --changed=web/x-board.dart
+[{"method":"mapping","params":{"from":"web/index.html","to":"web/out/index.html"}}]
+Total time spent on web/index.html                           -- 200 ms
+build.dart finished [480 ms]
+
+---
+build.dart --machine --changed=web/out/container.html.dart --changed=web/out/game.html.dart --changed=web/out/i...
+
+build.dart finished [591 ms]
+
+---
+build.dart --machine --changed=web/index.html
+[{"method":"mapping","params":{"from":"web/index.html","to":"web/out/index.html"}}]
+Total time spent on web/index.html                           -- 205 ms
+build.dart finished [420 ms]
+
+---
+build.dart --machine --changed=web/out/container.html.dart --changed=web/out/game.html.dart --changed=web/out/i...
+
+build.dart finished [208 ms]
+
+---
+build.dart --machine --changed=web/index.html
+[{"method":"mapping","params":{"from":"web/index.html","to":"web/out/index.html"}}]
+Total time spent on web/index.html                           -- 207 ms
+build.dart finished [449 ms]
+
+---
+build.dart --machine --changed=web/out/container.html.dart --changed=web/out/game.html.dart --changed=web/out/i...
+
+build.dart finished [203 ms]
+
+---
+build.dart --machine --changed=web/index.html
+[{"method":"mapping","params":{"from":"web/index.html","to":"web/out/index.html"}}]
+Total time spent on web/index.html                           -- 205 ms
+build.dart finished [462 ms]
+
+---
+build.dart --machine --changed=web/out/container.html.dart --changed=web/out/game.html.dart --changed=web/out/i...
+
+build.dart finished [363 ms]
+
+---
+build.dart --machine --changed=web/index.html
+[{"method":"mapping","params":{"from":"web/index.html","to":"web/out/index.html"}}]
+Total time spent on web/index.html                           -- 209 ms
+build.dart finished [449 ms]
+
+---
+build.dart --machine --changed=web/out/container.html.dart --changed=web/out/game.html.dart --changed=web/out/i...
+
+build.dart finished [205 ms]
+
+---
+build.dart --machine --changed=web/index.html
+[{"method":"mapping","params":{"from":"web/index.html","to":"web/out/index.html"}}]
+Total time spent on web/index.html                           -- 207 ms
+build.dart finished [443 ms]
+
+---
+build.dart --machine --changed=web/out/container.html.dart --changed=web/out/game.html.dart --changed=web/out/i...
+
+build.dart finished [272 ms]
+
+---
+build.dart --machine --changed=web/board.html
+[{"method":"mapping","params":{"from":"web/index.html","to":"web/out/index.html"}}]
+Total time spent on web/index.html                           -- 209 ms
+build.dart finished [477 ms]
+
+---
+build.dart --machine --changed=web/out/container.html.dart --changed=web/out/game.html.dart --changed=web/out/i...
+
+build.dart finished [202 ms]
+
+---
+build.dart --machine --changed=web/x-board.dart
+[{"method":"mapping","params":{"from":"web/index.html","to":"web/out/index.html"}}]
+Total time spent on web/index.html                           -- 212 ms
+build.dart finished [555 ms]
+
+---
+build.dart --machine --changed=web/out/container.html.dart --changed=web/out/game.html.dart --changed=web/out/i...
+
+build.dart finished [295 ms]
+
+---
+build.dart --machine --changed=web/x-board.dart
+[{"method":"mapping","params":{"from":"web/index.html","to":"web/out/index.html"}}]
+Total time spent on web/index.html                           -- 211 ms
+build.dart finished [431 ms]
+
+---
+build.dart --machine --changed=web/out/container.html.dart --changed=web/out/game.html.dart --changed=web/out/i...
+
+build.dart finished [1005 ms]
+
+---
+build.dart --machine --changed=web/x-board.dart
+[{"method":"mapping","params":{"from":"web/index.html","to":"web/out/index.html"}}]
+Total time spent on web/index.html                           -- 374 ms
+build.dart finished [670 ms]
+
+---
+build.dart --machine --changed=web/out/container.html.dart --changed=web/out/game.html.dart --changed=web/out/i...
+
+build.dart finished [879 ms]
+
+---
+build.dart --machine --changed=web/x-board.dart
+[{"method":"mapping","params":{"from":"web/index.html","to":"web/out/index.html"}}]
+Total time spent on web/index.html                           -- 266 ms
+build.dart finished [551 ms]
+
+---
+build.dart --machine --changed=web/out/container.html.dart --changed=web/out/game.html.dart --changed=web/out/i...
+
+build.dart finished [374 ms]
+
+---
+build.dart --machine --changed=web/x-board.dart
+[{"method":"mapping","params":{"from":"web/index.html","to":"web/out/index.html"}}]
+Total time spent on web/index.html                           -- 253 ms
+build.dart finished [569 ms]
+
+---
+build.dart --machine --changed=web/out/container.html.dart --changed=web/out/game.html.dart --changed=web/out/i...
+
+build.dart finished [632 ms]
+
+---
+build.dart --machine --changed=web/x-board.dart
+[{"method":"mapping","params":{"from":"web/index.html","to":"web/out/index.html"}}]
+Total time spent on web/index.html                           -- 218 ms
+build.dart finished [532 ms]
+
+---
+build.dart --machine --changed=web/out/container.html.dart --changed=web/out/game.html.dart --changed=web/out/i...
+
+build.dart finished [680 ms]
+
+---
+build.dart --machine --changed=web/board.html
+[{"method":"mapping","params":{"from":"web/index.html","to":"web/out/index.html"}}]
+Total time spent on web/index.html                           -- 207 ms
+build.dart finished [482 ms]
+
+---
+build.dart --machine --changed=web/out/container.html.dart --changed=web/out/game.html.dart --changed=web/out/i...
+
+build.dart finished [207 ms]
+
+---
+build.dart --machine --changed=web/board.html
+[{"method":"mapping","params":{"from":"web/index.html","to":"web/out/index.html"}}]
+Total time spent on web/index.html                           -- 205 ms
+build.dart finished [464 ms]
+
+---
+build.dart --machine --changed=web/out/container.html.dart --changed=web/out/game.html.dart --changed=web/out/i...
+
+build.dart finished [195 ms]
+
+---
+build.dart --machine --changed=web/x-board.dart
+[{"method":"mapping","params":{"from":"web/index.html","to":"web/out/index.html"}}]
+Total time spent on web/index.html                           -- 221 ms
+build.dart finished [600 ms]
+
+---
+build.dart --machine --changed=web/out/container.html.dart --changed=web/out/game.html.dart --changed=web/out/i...
+
+build.dart finished [244 ms]
+
+---
+build.dart --machine --changed=web/x-board.dart
+[{"method":"mapping","params":{"from":"web/index.html","to":"web/out/index.html"}}]
+Total time spent on web/index.html                           -- 208 ms
+build.dart finished [476 ms]
+
+---
+build.dart --machine --changed=web/out/container.html.dart --changed=web/out/game.html.dart --changed=web/out/i...
+
+build.dart finished [381 ms]
+
+---
+build.dart --machine --changed=web/x-board.dart
+[{"method":"mapping","params":{"from":"web/index.html","to":"web/out/index.html"}}]
+Total time spent on web/index.html                           -- 213 ms
+build.dart finished [523 ms]
+
+---
+build.dart --machine --changed=web/out/container.html.dart --changed=web/out/game.html.dart --changed=web/out/i...
+
+build.dart finished [335 ms]
+
+---
+build.dart --machine --changed=web/out/x-board.dart
+
+build.dart finished [208 ms]
+
+---
+build.dart --machine --changed=web/out/x-board.dart
+
+build.dart finished [194 ms]
+
+---
+build.dart --machine --changed=web/x-board.dart
+[{"method":"mapping","params":{"from":"web/index.html","to":"web/out/index.html"}}]
+Total time spent on web/index.html                           -- 285 ms
+build.dart finished [542 ms]
+
+---
+build.dart --machine --changed=web/out/container.html.dart --changed=web/out/game.html.dart --changed=web/out/i...
+
+build.dart finished [388 ms]
+
+---
+build.dart --machine --changed=web/x-board.dart
+[{"method":"mapping","params":{"from":"web/index.html","to":"web/out/index.html"}}]
+Total time spent on web/index.html                           -- 286 ms
+build.dart finished [559 ms]
+
+---
+build.dart --machine --changed=web/out/container.html.dart --changed=web/out/game.html.dart --changed=web/out/i...
+
+build.dart finished [289 ms]
+
+---
+build.dart --machine --changed=web/x-board.dart
+[{"method":"mapping","params":{"from":"web/index.html","to":"web/out/index.html"}}]
+Total time spent on web/index.html                           -- 203 ms
+build.dart finished [454 ms]
+
+---
+build.dart --machine --changed=web/out/container.html.dart --changed=web/out/game.html.dart --changed=web/out/i...
+
+build.dart finished [391 ms]
+
+---
+build.dart --machine --changed=web/x-board.dart
+[{"method":"mapping","params":{"from":"web/index.html","to":"web/out/index.html"}}]
+Total time spent on web/index.html                           -- 204 ms
+build.dart finished [487 ms]
+
+---
+build.dart --machine --changed=web/out/container.html.dart --changed=web/out/game.html.dart --changed=web/out/i...
+
+build.dart finished [821 ms]
+
+---
+build.dart --machine --changed=web/x-board.dart
+[{"method":"mapping","params":{"from":"web/index.html","to":"web/out/index.html"}}]
+Total time spent on web/index.html                           -- 208 ms
+build.dart finished [446 ms]
+
+---
+build.dart --machine --changed=web/out/container.html.dart --changed=web/out/game.html.dart --changed=web/out/i...
+
+build.dart finished [289 ms]
+
+---
+build.dart --machine --changed=web/x-board.dart
+[{"method":"mapping","params":{"from":"web/index.html","to":"web/out/index.html"}}]
+Total time spent on web/index.html                           -- 207 ms
+build.dart finished [444 ms]
+
+---
+build.dart --machine --changed=web/out/container.html.dart --changed=web/out/game.html.dart --changed=web/out/i...
+
+build.dart finished [340 ms]
+
+---
+build.dart --machine --changed=web/x-board.dart
+[{"method":"mapping","params":{"from":"web/index.html","to":"web/out/index.html"}}]
+Total time spent on web/index.html                           -- 205 ms
+build.dart finished [462 ms]
+
+---
+build.dart --machine --changed=web/out/container.html.dart --changed=web/out/game.html.dart --changed=web/out/i...
+
+build.dart finished [299 ms]
+
+---
+build.dart --machine --changed=web/x-board.dart
+[{"method":"mapping","params":{"from":"web/index.html","to":"web/out/index.html"}}]
+Total time spent on web/index.html                           -- 209 ms
+build.dart finished [481 ms]
+
+---
+build.dart --machine --changed=web/out/container.html.dart --changed=web/out/game.html.dart --changed=web/out/i...
+
+build.dart finished [215 ms]
+
+---
+build.dart --machine --changed=web/x-board.dart
+[{"method":"mapping","params":{"from":"web/index.html","to":"web/out/index.html"}}]
+Total time spent on web/index.html                           -- 204 ms
+build.dart finished [486 ms]
+
+---
+build.dart --machine --changed=web/out/container.html.dart --changed=web/out/game.html.dart --changed=web/out/i...
+
+build.dart finished [286 ms]
+
+---
+build.dart --machine --changed=web/x-board.dart
+[{"method":"mapping","params":{"from":"web/index.html","to":"web/out/index.html"}}]
+Total time spent on web/index.html                           -- 209 ms
+build.dart finished [585 ms]
+
+---
+build.dart --machine --changed=web/out/container.html.dart --changed=web/out/game.html.dart --changed=web/out/i...
+
+build.dart finished [335 ms]
+
+---
+build.dart --machine --changed=web/x-board.dart
+[{"method":"mapping","params":{"from":"web/index.html","to":"web/out/index.html"}}]
+Total time spent on web/index.html                           -- 242 ms
+build.dart finished [521 ms]
+
+---
+build.dart --machine --changed=web/out/container.html.dart --changed=web/out/game.html.dart --changed=web/out/i...
+
+build.dart finished [328 ms]
+
+---
+build.dart --machine --changed=web/x-board.dart
+[{"method":"mapping","params":{"from":"web/index.html","to":"web/out/index.html"}}]
+Total time spent on web/index.html                           -- 235 ms
+build.dart finished [489 ms]
+
+---
+build.dart --machine --changed=web/out/container.html.dart --changed=web/out/game.html.dart --changed=web/out/i...
+
+build.dart finished [385 ms]
+
+---
+build.dart --machine --changed=web/x-board.dart
+[{"method":"mapping","params":{"from":"web/index.html","to":"web/out/index.html"}}]
+Total time spent on web/index.html                           -- 343 ms
+build.dart finished [592 ms]
+
+---
+build.dart --machine --changed=web/out/container.html.dart --changed=web/out/game.html.dart --changed=web/out/i...
+
+build.dart finished [213 ms]
+
+---
+build.dart --machine --changed=web/x-board.dart
+[{"method":"mapping","params":{"from":"web/index.html","to":"web/out/index.html"}}]
+Total time spent on web/index.html                           -- 202 ms
+build.dart finished [478 ms]
+
+---
+build.dart --machine --changed=web/out/container.html.dart --changed=web/out/game.html.dart --changed=web/out/i...
+
+build.dart finished [383 ms]
+
+---
+build.dart --machine --changed=web/out/x-board.dart
+
+build.dart finished [220 ms]
+
+---
+build.dart --machine --changed=web/out/x-board.dart
+
+build.dart finished [224 ms]
+
+---
+build.dart --machine --changed=web/x-board.dart
+[{"method":"mapping","params":{"from":"web/index.html","to":"web/out/index.html"}}]
+Total time spent on web/index.html                           -- 212 ms
+build.dart finished [488 ms]
+
+---
+build.dart --machine --changed=web/out/container.html.dart --changed=web/out/game.html.dart --changed=web/out/i...
+
+build.dart finished [228 ms]
+
+---
+build.dart --machine --changed=web/out/x-board.dart
+
+build.dart finished [238 ms]
+
+---
+build.dart --machine --changed=web/out/x-board.dart
+
+build.dart finished [216 ms]
+
+---
+build.dart --machine --changed=web/out/x-board.dart
+
+build.dart finished [228 ms]
+
+---
+build.dart --machine --changed=web/x-board.dart
+[{"method":"mapping","params":{"from":"web/index.html","to":"web/out/index.html"}}]
+Total time spent on web/index.html                           -- 220 ms
+build.dart finished [534 ms]
+
+---
+build.dart --machine --changed=web/out/container.html.dart --changed=web/out/game.html.dart --changed=web/out/i...
+
+build.dart finished [222 ms]
+
+---
+build.dart --machine --changed=web/x-board.dart
+[{"method":"mapping","params":{"from":"web/index.html","to":"web/out/index.html"}}]
+Total time spent on web/index.html                           -- 214 ms
+build.dart finished [519 ms]
+
+---
+build.dart --machine --changed=web/out/container.html.dart --changed=web/out/game.html.dart --changed=web/out/i...
+
+build.dart finished [204 ms]
+
+---
+build.dart --machine --clean
+
+build.dart finished [217 ms]
+
+---
+build.dart --machine --full
+[{"method":"mapping","params":{"from":"web/index.html","to":"web/out/index.html"}}]
+Total time spent on web/index.html                           -- 204 ms
+build.dart finished [412 ms]
+
+---
+build.dart --machine --changed=web/out/container.html.dart --changed=web/out/game.html.dart --changed=web/out/i...
+
+build.dart finished [607 ms]
+
+---
+build.dart --machine --changed=pubspec.lock
+
+build.dart finished [214 ms]
+
+---
+build.dart --machine --changed=pubspec.yaml
+
+build.dart finished [203 ms]
+
+---
+build.dart --machine --changed=pubspec.lock
+Uncaught Error: NoSuchMethodError : method not found: 'write'
+Receiver: Instance of '_StringBufferImpl@0x36924d72'
+Arguments: ["Total time"]
+Stack Trace:
+#0      Object.noSuchMethod (dart:core-patch:1746:25)
+#1      _printMessage (package:web_ui/src/utils.dart:68:12)
+#2      asyncTime.<anonymous closure> (package:web_ui/src/utils.dart:61:20)
+#3      _ThenFuture._sendValue (dart:async:405:24)
+
+
+Unhandled exception:
+NoSuchMethodError : method not found: 'write'
+Receiver: Instance of '_StringBufferImpl@0x36924d72'
+Arguments: ["Total time"]
+#0      _FutureImpl._scheduleUnhandledError.<anonymous closure> (dart:async:333:9)
+#1      _Timer._createTimerHandler._handleTimeout (dart:io:7240:28)
+#2      _Timer._createTimerHandler._handleTimeout (dart:io:7248:7)
+#3      _Timer._createTimerHandler.<anonymous closure> (dart:io:7256:23)
+#4      _ReceivePortImpl._handleMessage (dart:isolate-patch:40:92)
+build.dart finished [1121 ms]
+

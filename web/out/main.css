@@ -25,14 +25,14 @@ body {
   padding-right:10px;
 }
 
-#x-board-controls button {
+#x-game-controls button {
   float:left;
   margin-left: 10px;
   margin-right: 10px;
   margin-top: -10px;
 }
 
-#x-board-controls p {
+#x-game-controls p {
   margin-top: 20px;
 }
 

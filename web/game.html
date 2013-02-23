@@ -4,7 +4,7 @@
   <element name="x-game" constructor="Game" extends="div">
     <template>
       <div id="x-game">
-        <div id="x-board-controls">
+        <div id="x-game-controls">
           <button class="btn btn-danger" on-click="newgame($event);">New game</button>
           <p>game {{gameCount}} started at {{gameStartTime}}.
         </div>
@@ -20,10 +20,10 @@
         void newgame(e) {
           gameStartTime = new DateTime.now();
           gameCount++;
-          var xBoard = document.query('x-board').xtag;
-          xBoard.turnCount = 0; //.nextturn(e,true);
-          xBoard.turnStartTime = gameStartTime;
-          xBoard.begun = false;
+          var xContainer = document.query('x-container').xtag;
+          xContainer.turnCount = 0; //.nextturn(e,true);
+          xContainer.turnStartTime = gameStartTime;
+          xContainer.begun = false;
         }
       }
     </script>

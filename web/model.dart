@@ -5,7 +5,7 @@ import 'board.dart';
 /**
  * Represents one game from start to finish.
  */
-class Game {
+class Board {
 
   List<String> resources;
   List<int> probs;
@@ -16,7 +16,7 @@ class Game {
   /**
    * Prints a text-only visualization of the game board.
    */
-  String printBoard() {
+  String toString() {
     String board = blankBoard();
     for (Tile tile in tiles) {
       board = board.replaceFirst('#####', '$tile');
@@ -27,7 +27,7 @@ class Game {
   /**
    * Sets up a new random board.
    */
-  Game() {
+  Board() {
     this.tiles = [];
     this.resources = shuffle(['W','W','W','W','L','L','L','L','S','S','S','S','I','I','I','B','B','B','X']);
     this.probs = shuffle([2,3,3,4,4,5,5,6,6,8,8,9,9,10,10,11,11,12]);
